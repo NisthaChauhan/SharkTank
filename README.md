@@ -1,10 +1,10 @@
-# 🦈 SharkTank Data Analysis Project 🦈
+# 🦈 SharkTank India Data Analysis Project 🦈
 
 Welcome to the *fin-tastic* world of Shark Tank data analysis! This project dives deep into the tank to uncover the secrets behind successful pitches, shark behavior, and business trends.
 
 ## 🚀 Overview
 
-Ever wondered what *really* makes the sharks bite? This repository contains a fun and insightful analysis of Shark Tank deals across multiple seasons of everyone's favorite business reality TV show. We're swimming through the data to reveal investment patterns, success factors, and what happens after entrepreneurs leave the tank!
+Ever wondered what *really* makes the sharks bite? This repository contains a fun and insightful analysis of Shark Tank India deals across multiple seasons of everyone's favorite business reality TV show. We're swimming through the data to reveal investment patterns, success factors, and what makes Namita, Vineeta, Anupam, Aman, Peyush, Amit, and Ashneer open their wallets!
 
 ## ✨ Features
 
@@ -25,60 +25,89 @@ Our analysis uses a treasure trove of Shark Tank episodes data, including:
 
 ## 📚 Data Dictionary
 
-| Column Name | Description | Data Type | Example Values |
-|-------------|-------------|-----------|---------------|
-| `Season Number` | Season of Shark Tank | Integer | 1, 2, 3 |
-| `Startup Name` | Name of the pitching company | String | BluArmor, Hammer & Mop |
-| `Episode Number` | Episode within the season | Integer | 1, 2, 3 |
-| `Pitch Number` | Sequence of pitch in the episode | Integer | 1, 2, 3 |
-| `Season Start` | Season start date | Date | 2021-12-20 |
-| `Season End` | Season end date | Date | 2022-02-04 |
-| `Original Air Date` | Date when episode was aired | Date | 2021-12-20 |
-| `Episode Title` | Title of the episode | String | "Season Premiere" |
-| `Anchor` | Main highlight of the episode | String | "First pitch of the season" |
-| `Industry` | Business category | String | "Technology", "Food & Beverage" |
-| `Business Description` | Brief description of business | String | "Smart helmet with cooling solution" |
-| `Company Website` | Website URL | String | "bluarmor.com" |
-| `Started in` | Year business was founded | Integer | 2016, 2019 |
-| `Number of Presenters` | Count of pitchers | Integer | 1, 2, 3 |
-| `Male Presenters` | Count of male presenters | Integer | 0, 1, 2 |
-| `Female Presenters` | Count of female presenters | Integer | 0, 1, 2 |
-| `Transgender Presenters` | Count of transgender presenters | Integer | 0, 1 |
-| `Couple Presenters` | Whether presenters are a couple | Boolean | True, False |
-| `Pitchers Average Age` | Average age of presenters | Float | 28.5, 35.0 |
-| `Pitchers City` | City of business | String | "Mumbai", "Delhi" |
-| `Pitchers State` | State of business | String | "Maharashtra", "Karnataka" |
-| `Yearly Revenue` | Annual revenue (₹) | Integer | 5000000, 10000000 |
-| `Monthly Sales` | Monthly sales (₹) | Integer | 500000, 1000000 |
-| `Gross Margin` | Gross profit percentage | Float | 60.0, 75.5 |
-| `Net Margin` | Net profit percentage | Float | 15.0, 25.0 |
-| `EBITDA` | Earnings before interest, taxes, etc. | Integer | 1000000, 2500000 |
-| `Cash Burn` | Monthly cash burn rate | Integer | 200000, 500000 |
-| `SKUs` | Number of products/variations | Integer | 5, 12, 20 |
-| `Has Patents` | Whether business has patents | Boolean | True, False |
-| `Bootstrapped` | Self-funded without external investment | Boolean | True, False |
-| `Original Ask Amount` | Investment requested (₹) | Integer | 10000000, 50000000 |
-| `Original Offered Equity` | Equity percentage offered | Float | 5.0, 10.0, 15.0 |
-| `Valuation Requested` | Implied business valuation | Integer | 100000000, 200000000 |
-| `Received Offer` | Whether any shark made an offer | Boolean | True, False |
-| `Accepted Offer` | Whether entrepreneur accepted an offer | Boolean | True, False |
-| `Total Deal Amount` | Final investment amount (₹) | Integer | 10000000, 30000000 |
-| `Total Deal Equity` | Final equity percentage | Float | 15.0, 25.0 |
-| `Total Deal Debt` | Debt component of deal (₹) | Integer | 0, 5000000 |
-| `Debt Interest` | Interest rate on debt | Float | 10.0, 12.0 |
-| `Deal Valuation` | Final business valuation | Integer | 100000000, 150000000 |
-| `Number of Sharks in Deal` | Count of investing sharks | Integer | 1, 2, 3 |
-| `Deal Has Conditions` | Whether deal has conditions | Boolean | True, False |
-| `Royalty Deal` | Whether deal includes royalties | Boolean | True, False |
-| `Advisory Shares Equity` | Equity for advisory role | Float | 0.0, 2.0, 5.0 |
-| `Namita Investment Amount` | Namita's investment (₹) | Integer | 0, 10000000 |
-| `Namita Investment Equity` | Namita's equity percentage | Float | 0.0, 10.0, 15.0 |
-| `Namita Debt Amount` | Namita's debt component (₹) | Integer | 0, 5000000 |
-| `Vineeta Investment Amount` | Vineeta's investment (₹) | Integer | 0, 10000000 |
-| `Vineeta Investment Equity` | Vineeta's equity percentage | Float | 0.0, 10.0, 15.0 |
-| `Vineeta Debt Amount` | Vineeta's debt component (₹) | Integer | 0, 5000000 |
-| `Anupam Investment Amount` | Anupam's investment (₹) | Integer | 0, 10000000 |
-| `Anupam Investment Equity` | Anupam's equity percentage
+| Column Name                 | Description                                                     | Data Type | Example Values                       |
+| --------------------------- | --------------------------------------------------------------- | --------- | ------------------------------------ |
+| `Season Number`             | Season of Shark Tank                                            | Integer   | 1, 2, 3                              |
+| `Startup Name`              | Name of the pitching company                                    | String    | BluArmor, Hammer & Mop               |
+| `Episode Number`            | Episode within the season                                       | Integer   | 1, 2, 3                              |
+| `Pitch Number`              | Sequence of the pitch in the episode                            | Integer   | 1, 2, 3                              |
+| `Season Start`              | Season start date                                               | Date      | 2021-12-20                           |
+| `Season End`                | Season end date                                                 | Date      | 2022-02-04                           |
+| `Original Air Date`         | Air date of the episode                                         | Date      | 2021-12-20                           |
+| `Episode Title`             | Title of the episode                                            | String    | "Season Premiere"                    |
+| `Anchor`                    | Highlight or focus of the episode                               | String    | "First pitch of the season"          |
+| `Industry`                  | Sector or category of the business                              | String    | Technology, Food & Beverage          |
+| `Business Description`      | Short description of the startup                                | String    | "Smart helmet with cooling solution" |
+| `Company Website`           | Website URL                                                     | String    | bluarmor.com                         |
+| `Started in`                | Year the business was founded                                   | Integer   | 2016, 2019                           |
+| `Number of Presenters`      | Total number of pitchers                                        | Integer   | 1, 2, 3                              |
+| `Male Presenters`           | Number of male presenters                                       | Integer   | 0, 1, 2                              |
+| `Female Presenters`         | Number of female presenters                                     | Integer   | 0, 1, 2                              |
+| `Transgender Presenters`    | Number of transgender presenters                                | Integer   | 0, 1                                 |
+| `Couple Presenters`         | Whether presenters are a couple                                 | Boolean   | True, False                          |
+| `Pitchers Average Age`      | Average age of all presenters                                   | Float     | 28.5, 35.0                           |
+| `Pitchers City`             | City of the business                                            | String    | Mumbai, Delhi                        |
+| `Pitchers State`            | State of the business                                           | String    | Maharashtra, Karnataka               |
+| `Yearly Revenue`            | Annual revenue in ₹                                             | Integer   | 5,000,000; 10,000,000                |
+| `Monthly Sales`             | Monthly sales in ₹                                              | Integer   | 500,000; 1,000,000                   |
+| `Gross Margin`              | Gross margin percentage                                         | Float     | 60.0, 75.5                           |
+| `Net Margin`                | Net margin percentage                                           | Float     | 15.0, 25.0                           |
+| `EBITDA`                    | Earnings before interest, taxes, depreciation, and amortization | Integer   | 1,000,000; 2,500,000                 |
+| `Cash Burn`                 | Monthly cash burn in ₹                                          | Integer   | 200,000; 500,000                     |
+| `SKUs`                      | Number of unique product types                                  | Integer   | 5, 12, 20                            |
+| `Has Patents`               | Whether the business owns patents                               | Boolean   | True, False                          |
+| `Bootstrapped`              | Whether the business is self-funded                             | Boolean   | True, False                          |
+| `Original Ask Amount`       | Investment amount requested in ₹                                | Integer   | 10,000,000; 50,000,000               |
+| `Original Offered Equity`   | Equity percentage offered by founders                           | Float     | 5.0, 10.0, 15.0                      |
+| `Valuation Requested`       | Implied valuation from pitch                                    | Integer   | 100,000,000; 200,000,000             |
+| `Received Offer`            | Whether the business received any offer                         | Boolean   | True, False                          |
+| `Accepted Offer`            | Whether the entrepreneur accepted an offer                      | Boolean   | True, False                          |
+| `Total Deal Amount`         | Final deal amount in ₹                                          | Integer   | 10,000,000; 30,000,000               |
+| `Total Deal Equity`         | Final equity given in the deal                                  | Float     | 15.0, 25.0                           |
+| `Total Deal Debt`           | Debt component of the deal in ₹                                 | Integer   | 0; 5,000,000                         |
+| `Debt Interest`             | Interest rate on the debt                                       | Float     | 10.0, 12.0                           |
+| `Deal Valuation`            | Final valuation based on deal terms                             | Integer   | 100,000,000; 150,000,000             |
+| `Number of Sharks in Deal`  | Number of sharks involved in the deal                           | Integer   | 1, 2, 3                              |
+| `Deal Has Conditions`       | Whether the deal includes conditions                            | Boolean   | True, False                          |
+| `Royalty Deal`              | Whether the deal involves royalty                               | Boolean   | True, False                          |
+| `Advisory Shares Equity`    | Equity offered for advisory role                                | Float     | 0.0, 2.0, 5.0                        |
+| `Namita Investment Amount`  | Namita's investment amount in ₹                                 | Integer   | 0, 10,000,000                        |
+| `Namita Investment Equity`  | Namita's equity share                                           | Float     | 0.0, 10.0, 15.0                      |
+| `Namita Debt Amount`        | Namita's debt contribution in ₹                                 | Integer   | 0, 5,000,000                         |
+| `Vineeta Investment Amount` | Vineeta's investment amount in ₹                                | Integer   | 0, 10,000,000                        |
+| `Vineeta Investment Equity` | Vineeta's equity share                                          | Float     | 0.0, 10.0, 15.0                      |
+| `Vineeta Debt Amount`       | Vineeta's debt contribution in ₹                                | Integer   | 0, 5,000,000                         |
+| `Anupam Investment Amount`  | Anupam's investment amount in ₹                                 | Integer   | 0, 10,000,000                        |
+| `Anupam Investment Equity`  | Anupam's equity share                                           | Float     | 0.0, 10.0, 15.0                      |
+| `Anupam Debt Amount`        | Anupam's debt contribution in ₹                                 | Integer   | 0, 5,000,000                         |
+| `Aman Investment Amount`    | Aman's investment amount in ₹                                   | Integer   | 0, 10,000,000                        |
+| `Aman Investment Equity`    | Aman's equity share                                             | Float     | 0.0, 10.0, 15.0                      |
+| `Aman Debt Amount`          | Aman's debt contribution in ₹                                   | Integer   | 0, 5,000,000                         |
+| `Peyush Investment Amount`  | Peyush's investment amount in ₹                                 | Integer   | 0, 10,000,000                        |
+| `Peyush Investment Equity`  | Peyush's equity share                                           | Float     | 0.0, 10.0, 15.0                      |
+| `Peyush Debt Amount`        | Peyush's debt contribution in ₹                                 | Integer   | 0, 5,000,000                         |
+| `Amit Investment Amount`    | Amit's investment amount in ₹                                   | Integer   | 0, 10,000,000                        |
+| `Amit Investment Equity`    | Amit's equity share                                             | Float     | 0.0, 10.0, 15.0                      |
+| `Amit Debt Amount`          | Amit's debt contribution in ₹                                   | Integer   | 0, 5,000,000                         |
+| `Ashneer Investment Amount` | Ashneer's investment amount in ₹                                | Integer   | 0, 10,000,000                        |
+| `Ashneer Investment Equity` | Ashneer's equity share                                          | Float     | 0.0, 10.0, 15.0                      |
+| `Ashneer Debt Amount`       | Ashneer's debt contribution in ₹                                | Integer   | 0, 5,000,000                         |
+| `Guest Investment Amount`   | Guest shark's investment amount in ₹                            | Integer   | 0, 10,000,000                        |
+| `Guest Investment Equity`   | Guest shark's equity share                                      | Float     | 0.0, 10.0, 15.0                      |
+| `Guest Debt Amount`         | Guest shark's debt contribution in ₹                            | Integer   | 0, 5,000,000                         |
+| `Invested Guest Name`       | Name of guest shark who invested                                | String    | "Ghazal Alagh", "Ritesh Agarwal"     |
+| `All Guest Names`           | All guest sharks in the episode                                 | String    | "Ghazal Alagh, Ritesh Agarwal"       |
+| `Namita Present`            | Whether Namita was present                                      | Boolean   | True, False                          |
+| `Vineeta Present`           | Whether Vineeta was present                                     | Boolean   | True, False                          |
+| `Anupam Present`            | Whether Anupam was present                                      | Boolean   | True, False                          |
+| `Aman Present`              | Whether Aman was present                                        | Boolean   | True, False                          |
+| `Peyush Present`            | Whether Peyush was present                                      | Boolean   | True, False                          |
+| `Amit Present`              | Whether Amit was present                                        | Boolean   | True, False                          |
+| `Ashneer Present`           | Whether Ashneer was present                                     | Boolean   | True, False                          |
+| `Guest Present`             | Whether a guest shark was present                               | Boolean   | True, False                          |ent | Boolean | True, False |
+| `Amit Present` | Whether Amit was present | Boolean | True, False |
+| `Ashneer Present` | Whether Ashneer was present | Boolean | True, False |
+| `Guest Present` | Whether a guest shark was present | Boolean | True, False |
 
 ## 🏁 Getting Started
 
