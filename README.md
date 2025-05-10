@@ -1,3 +1,22 @@
+# 🦈 SharkTank India Data Analysis
+
+An analysis of deals, investments, and trends from India's popular business reality show.
+
+## 📊 Overview
+
+This project analyzes Shark Tank India data across multiple seasons to uncover:
+- Investment patterns by sharks (Namita, Vineeta, Anupam, Aman, Peyush, Amit, Ashneer)
+- Success factors for pitches
+- Industry trends and valuations
+- Deal structures and negotiations
+
+## 🔑 Key Features
+
+- Deal analysis by industry and shark
+- Visualization of investment patterns
+- Success factor identification
+- Valuation trends across seasons
+
 
 ## 📚 Data Dictionary
 
@@ -84,33 +103,6 @@
 | `Amit Present` | Whether Amit was present | Boolean | True, False |
 | `Ashneer Present` | Whether Ashneer was present | Boolean | True, False |
 | `Guest Present` | Whether a guest shark was present | Boolean | True, False |
-# 🦈 SharkTank India Data Analysis
-
-An analysis of deals, investments, and trends from India's popular business reality show.
-
-## 📊 Overview
-
-This project analyzes Shark Tank India data across multiple seasons to uncover:
-- Investment patterns by sharks (Namita, Vineeta, Anupam, Aman, Peyush, Amit, Ashneer)
-- Success factors for pitches
-- Industry trends and valuations
-- Deal structures and negotiations
-
-## 🔑 Key Features
-
-- Deal analysis by industry and shark
-- Visualization of investment patterns
-- Success factor identification
-- Valuation trends across seasons
-
-## 💾 Dataset
-
-The analysis uses comprehensive episode data including:
-- Company details and valuations
-- Entrepreneur demographics
-- Deal terms and equity distributions
-- Individual shark investments
-- Geographic distribution of startups
 
 ## 🚀 Getting Started
 
