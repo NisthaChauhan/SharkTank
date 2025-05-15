@@ -113,4 +113,3 @@ cd SharkTankIndia
 ```
 
 
-*Inspired by the entrepreneurs who dare to dive into the tank!*
